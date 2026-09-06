@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FilChantier — La veille réglementaire des artisans du bâtiment</title>
+  <meta name="description" content="Chaque lundi, la veille réglementaire des artisans du bâtiment : 3 actions maximum, en français clair, avec les liens officiels (JO, BOFIP, BOSS, Légifrance). Offre early-bird 12 € TTC/mois." />
+  <meta name="theme-color" content="#f6efe1" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="FilChantier — La veille réglementaire des artisans du bâtiment" />
+  <meta property="og:description" content="3 actions max, en français clair, avec les liens officiels. Chaque lundi. Offre early-bird 12 € TTC/mois." />
+  <meta property="og:url" content="https://filchantier.vercel.app" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#waitlist">Aller au formulaire d'inscription</a>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="FilChantier, accueil">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-hidden="true">
+            <path d="M6 26 L16 6 L26 26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="16" cy="6" r="3" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="brand-name">FilChantier</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#probleme">Le problème</a>
+        <a href="#recois">Ce que tu reçois</a>
+        <a href="#tarifs">Tarifs</a>
+        <a class="nav-cta" href="#waitlist">Rejoindre la liste</a>
+      </nav>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#probleme">Le problème</a>
+      <a href="#recois">Ce que tu reçois</a>
+      <a href="#tarifs">Tarifs</a>
+      <a class="nav-cta" href="#waitlist">Rejoindre la liste</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            Veille réglementaire · Bâtiment · France
+          </p>
+          <h1>La réglementation du bâtiment, <em>digérée</em> pour toi. Chaque lundi.</h1>
+          <p class="lede">
+            FilChantier lit le Journal Officiel, le BOFIP, le BOSS et Légifrance à ta place.
+            Tu reçois <strong>3 actions maximum</strong>, en français clair, avec les liens officiels.
+            Zéro jargon, zéro perte de temps sur le chantier.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-amber" href="#waitlist">
+              Réserver ma place à 12 €
+              <span class="btn-sub">early-bird · 30 places</span>
+            </a>
+            <a class="btn btn-ghost" href="#recois">Voir un exemple</a>
+          </div>
+
+          <p class="scarcity">
+            <span class="scarcity-pill">30 places</span>
+            Offre de lancement — <strong>12 € TTC/mois</strong> pendant 3 mois, puis 19 €. Sans engagement.
+          </p>
+
+          <ul class="hero-trust">
+            <li>Plombiers</li>
+            <li>Électriciens</li>
+            <li>Second œuvre</li>
+          </ul>
+        </div>
+
+        <!-- Hero visual: email preview -->
+        <div class="hero-visual" aria-hidden="false">
+          <figure class="mail-card mail-card--hero">
+            <figcaption class="mail-head">
+              <span class="mail-avatar">FC</span>
+              <span class="mail-meta">
+                <span class="mail-from">FilChantier</span>
+                <span class="mail-subject">Ta veille du lundi — semaine 14</span>
+              </span>
+              <span class="mail-badge">Lu·07:12</span>
+            </figcaption>
+            <div class="mail-body">
+              <p class="mail-hello">Bonjour Karim,</p>
+              <p class="mail-intro">Cette semaine, <strong>3 choses</strong> à connaître. Temps de lecture&nbsp;: 2&nbsp;min.</p>
+
+              <ol class="mail-actions">
+                <li>
+                  <span class="mail-tag mail-tag--tva">TVA</span>
+                  <div>
+                    <p class="mail-action-title">Taux réduit rénovation énergétique : nouveau justificatif à joindre au devis.</p>
+                    <p class="mail-action-do">À faire : ajouter la mention type sur tes prochains devis.</p>
+                    <a class="mail-link" href="#">Source · Légifrance ↗</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="mail-tag mail-tag--urssaf">URSSAF</span>
+                  <div>
+                    <p class="mail-action-title">Cotisations 4ᵉ trimestre : la date d'exigibilité est décalée.</p>
+                    <p class="mail-action-do">À faire : rien avant le 15. On te le rappelle.</p>
+                    <a class="mail-link" href="#">Source · BOSS ↗</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="mail-tag mail-tag--norme">Norme</span>
+                  <div>
+                    <p class="mail-action-title">Électricité : évolution NF C 15-100 sur les circuits spécialisés.</p>
+                    <p class="mail-action-do">À faire : vérifier tes prochaines installations neuves.</p>
+                    <a class="mail-link" href="#">Source · JO ↗</a>
+                  </div>
+                </li>
+              </ol>
+
+              <p class="mail-foot">C'est tout pour aujourd'hui. Bon chantier 👷</p>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Logos / bandeau confiance -->
+    <section class="strip" aria-label="Sources officielles suivies">
+      <div class="container strip-inner">
+        <span class="strip-label">On suit pour toi&nbsp;:</span>
+        <ul class="strip-sources">
+          <li>Journal Officiel</li>
+          <li>BOFIP</li>
+          <li>BOSS</li>
+          <li>Légifrance</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Problème -->
+    <section class="section" id="probleme">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Le vrai problème</p>
+          <h2>La règle change tout le temps. Toi, tu es sur le chantier.</h2>
+          <p class="section-intro">
+            Personne n'a le temps d'éplucher des textes de loi entre deux poses.
+            Résultat&nbsp;: on découvre les nouveautés trop tard, souvent par un client ou un contrôle.
+          </p>
+        </header>
+
+        <div class="cards cards-3">
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">⏳</span>
+            <h3>Trop de textes, zéro temps</h3>
+            <p>Des dizaines de pages publiées chaque semaine. Impossible de tout lire, encore moins de trier ce qui te concerne vraiment.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">🌀</span>
+            <h3>Du jargon illisible</h3>
+            <p>« Alinéa », « arrêté modificatif », « exigibilité »… Écrit pour des juristes, pas pour un artisan qui veut juste savoir quoi faire.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon" aria-hidden="true">⚠️</span>
+            <h3>L'erreur coûte cher</h3>
+            <p>Un mauvais taux de TVA, une mention oubliée, une norme ratée. La sanction tombe des mois plus tard, avec les pénalités.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ce que tu reçois -->
+    <section class="section section--cream" id="recois">
+      <div class="container recois-grid">
+        <div class="recois-copy">
+          <p class="section-kicker">Ce que tu reçois</p>
+          <h2>Un email court. Trois actions. Point.</h2>
+          <p class="section-intro">
+            Chaque lundi matin, une synthèse qui va droit au but. Chaque info est reliée à sa
+            source officielle, et surtout&nbsp;: on te dit <strong>ce que tu dois faire</strong>, concrètement.
+          </p>
+
+          <ul class="feature-list">
+            <li>
+              <span class="feature-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>3 actions maximum</strong>
+                <span>On priorise. Ce qui compte vraiment cette semaine, rien d'autre.</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Français clair</strong>
+                <span>Réécrit pour le terrain. « À faire » en une phrase, sans jargon.</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>Liens officiels</strong>
+                <span>JO, BOFIP, BOSS, Légifrance. Tu vérifies la source en un clic.</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-check" aria-hidden="true">✓</span>
+              <div>
+                <strong>2 minutes de lecture</strong>
+                <span>Pensé pour être lu depuis le camion, avant la première pose.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a class="btn btn-forest" href="#waitlist">Recevoir ma veille du lundi</a>
+        </div>
+
+        <div class="recois-visual">
+          <figure class="mail-card">
+            <figcaption class="mail-head">
+              <span class="mail-avatar">FC</span>
+              <span class="mail-meta">
+                <span class="mail-from">FilChantier <span class="mail-email">· bonjour@filchantier.fr</span></span>
+                <span class="mail-subject">Ta veille du lundi — 3 actions cette semaine</span>
+              </span>
+            </figcaption>
+            <div class="mail-body">
+              <p class="mail-hello">Bonjour Sophie,</p>
+              <p class="mail-intro">Semaine chargée côté règles. On a gardé <strong>l'essentiel</strong> :</p>
+
+              <ol class="mail-actions">
+                <li>
+                  <span class="mail-tag mail-tag--tva">Fiscal</span>
+                  <div>
+                    <p class="mail-action-title">Facturation électronique : le calendrier se précise pour les TPE.</p>
+                    <p class="mail-action-do">À faire : noter la date, on t'accompagnera avant l'échéance.</p>
+                    <a class="mail-link" href="#">Source · BOFIP ↗</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="mail-tag mail-tag--norme">Sécurité</span>
+                  <div>
+                    <p class="mail-action-title">Travail en hauteur : rappel des équipements exigés en contrôle.</p>
+                    <p class="mail-action-do">À faire : vérifier tes EPI avant la semaine prochaine.</p>
+                    <a class="mail-link" href="#">Source · Légifrance ↗</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="mail-tag mail-tag--urssaf">Aides</span>
+                  <div>
+                    <p class="mail-action-title">MaPrimeRénov' : un plafond évolue pour la rénovation d'ampleur.</p>
+                    <p class="mail-action-do">À faire : le mentionner à tes clients concernés.</p>
+                    <a class="mail-link" href="#">Source · JO ↗</a>
+                  </div>
+                </li>
+              </ol>
+
+              <p class="mail-foot">Bonne semaine, et bon chantier 👷</p>
+            </div>
+          </figure>
+          <p class="mail-caption">Exemple réel de format — les infos sont illustratives.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comment ça marche -->
+    <section class="section" id="fonctionnement">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">Comment ça marche</p>
+          <h2>Tu t'inscris une fois. On s'occupe du reste.</h2>
+        </header>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num">1</span>
+            <h3>Tu choisis ton métier</h3>
+            <p>Plomberie, électricité, second œuvre… On cible la veille sur ce qui te concerne.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">2</span>
+            <h3>On lit les textes</h3>
+            <p>Chaque semaine, on épluche les sources officielles et on trie le bruit.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">3</span>
+            <h3>Tu reçois l'essentiel</h3>
+            <p>Lundi matin, 3 actions claires dans ta boîte mail. Lecture : 2 minutes.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Tarifs -->
+    <section class="section section--forest" id="tarifs">
+      <div class="container">
+        <header class="section-head section-head--light">
+          <p class="section-kicker">Tarifs</p>
+          <h2>Le prix d'un café par semaine. Pas d'une amende.</h2>
+          <p class="section-intro">Sans engagement, résiliable en un clic. TVA incluse.</p>
+        </header>
+
+        <div class="pricing">
+          <article class="price-card price-card--featured">
+            <span class="price-flag">Lancement · 30 places</span>
+            <h3 class="price-name">Early-bird</h3>
+            <p class="price-amount"><span class="price-num">12 €</span><span class="price-unit">TTC / mois</span></p>
+            <p class="price-note">Pendant 3 mois, puis <strong>19 €/mois</strong> (tarif Solo). Sans engagement.</p>
+            <ul class="price-features">
+              <li>La veille du lundi, chaque semaine</li>
+              <li>3 actions max, français clair</li>
+              <li>Tous les liens officiels</li>
+              <li>Ciblage par métier</li>
+              <li>Tarif bloqué 3 mois</li>
+            </ul>
+            <a class="btn btn-amber btn-block" href="#waitlist">Réserver ma place</a>
+            <p class="price-scarcity">Il reste peu de places à ce tarif.</p>
+          </article>
+
+          <article class="price-card">
+            <h3 class="price-name">Solo</h3>
+            <p class="price-amount"><span class="price-num">19 €</span><span class="price-unit">TTC / mois</span></p>
+            <p class="price-note">Le tarif normal, disponible après le lancement.</p>
+            <ul class="price-features">
+              <li>La veille du lundi, chaque semaine</li>
+              <li>3 actions max, français clair</li>
+              <li>Tous les liens officiels</li>
+              <li>Ciblage par métier</li>
+              <li>Sans engagement</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#waitlist">Être prévenu·e</a>
+            <p class="price-scarcity">&nbsp;</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section class="section section--cream" id="waitlist">
+      <div class="container waitlist-grid">
+        <div class="waitlist-copy">
+          <p class="section-kicker">Liste d'attente</p>
+          <h2>Prends ta place à 12 €.</h2>
+          <p class="section-intro">
+            Laisse ton email pour bloquer le tarif de lancement. On te prévient dès l'ouverture —
+            zéro spam, tu peux te désinscrire quand tu veux.
+          </p>
+          <ul class="waitlist-points">
+            <li><span aria-hidden="true">✓</span> 30 places à 12 € TTC/mois</li>
+            <li><span aria-hidden="true">✓</span> Tarif bloqué 3 mois</li>
+            <li><span aria-hidden="true">✓</span> Sans engagement, sans carte pour l'instant</li>
+          </ul>
+        </div>
+
+        <form class="waitlist-form" id="waitlist-form" action="mailto:bonjour@filchantier.fr" method="post" enctype="text/plain" novalidate>
+          <div class="field">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="given-name" placeholder="Karim" />
+          </div>
+          <div class="field">
+            <label for="email">Email professionnel</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="toi@artisan.fr" aria-describedby="email-help" />
+            <p class="field-help" id="email-help">On l'utilise uniquement pour t'envoyer la veille.</p>
+          </div>
+          <div class="field">
+            <label for="metier">Ton métier</label>
+            <div class="select-wrap">
+              <select id="metier" name="metier">
+                <option value="">Choisir…</option>
+                <option value="plomberie">Plomberie / chauffage</option>
+                <option value="electricite">Électricité</option>
+                <option value="second-oeuvre">Second œuvre</option>
+                <option value="multi">Multi-métiers</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-amber btn-block">Réserver ma place à 12 €</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-fineprint">En t'inscrivant, tu acceptes de recevoir la veille hebdomadaire. Désinscription en un clic.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer" aria-label="Mention légale">
+      <div class="container disclaimer-inner">
+        <span class="disclaimer-icon" aria-hidden="true">ⓘ</span>
+        <p>
+          <strong>FilChantier propose une veille documentaire, pas un conseil juridique.</strong>
+          Les synthèses sont fournies à titre informatif et renvoient toujours aux textes officiels.
+          Pour toute décision, réfère-toi aux sources citées ou consulte un professionnel du droit.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="FilChantier, accueil">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="24" height="24" role="img" aria-hidden="true">
+              <path d="M6 26 L16 6 L26 26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="6" r="3" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand-name">FilChantier</span>
+        </a>
+        <p class="footer-tag">La veille réglementaire des artisans du bâtiment. Chaque lundi.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Liens de pied de page">
+        <a href="#probleme">Le problème</a>
+        <a href="#recois">Ce que tu reçois</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#waitlist">Liste d'attente</a>
+        <a href="mailto:bonjour@filchantier.fr">bonjour@filchantier.fr</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> FilChantier — Veille documentaire, ne constitue pas un conseil juridique.</p>
+      <p class="footer-made">Fait avec soin pour ceux qui bâtissent.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
